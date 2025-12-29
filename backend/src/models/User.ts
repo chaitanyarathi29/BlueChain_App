@@ -3,26 +3,25 @@ import { Schema, model } from "mongoose";
 const documentSchema = new Schema({
   fileId: String,
   name: String,
-  url: String
+  url: String,
 });
 
 const userSchema = new Schema(
   {
     role: {
       type: String,
-      enum: ["GENERATOR", "CONSUMER"],
-      required: true
+      enum: ["GENERATOR", "CONSUMER", "VALIDATOR"],
+      required: true,
     },
 
     email: {
       type: String,
       required: true,
-      unique: true
+      unique: true,
     },
 
     password: {
       type: String,
-      required: true
     },
 
     // GENERATOR
@@ -34,7 +33,13 @@ const userSchema = new Schema(
     taxId: String,
     securityAnswer: String,
 
-    documents: [documentSchema] // <-- support multiple documents
+    // VALIDATOR
+    aadhaarNumber: String,
+    phoneNumber: String,
+    verificationCode: String,
+    isDigiLockerVerified: Boolean,
+
+    documents: [documentSchema], // <-- support multiple documents
   },
   { timestamps: true }
 );
