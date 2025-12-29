@@ -23,16 +23,16 @@ const defaultWallet: WalletState = {
   address: null,
   balance: 125000,
   assets: [
-    { id: '1', name: 'Blue Carbon Credits', symbol: 'BCC', balance: 450, inrValue: 67500, icon: '🌊' },
+    { id: '1', name: 'Aeris', symbol: 'Aeris', balance: 450, inrValue: 67500, icon: '🌊' },
     { id: '2', name: 'USD Coin', symbol: 'USDC', balance: 1250.50, inrValue: 104167, icon: '💵' },
     { id: '3', name: 'Ethereum', symbol: 'ETH', balance: 0.85, inrValue: 212500, icon: '⟠' },
     { id: '4', name: 'Polygon', symbol: 'MATIC', balance: 500, inrValue: 45000, icon: '🟣' },
   ],
   transactions: [
-    { id: '1', type: 'received', token: 'BCC', amount: 50, inrValue: 7500, date: '2024-01-15 14:32', fromAddress: '0x1234...5678', status: 'completed' },
-    { id: '2', type: 'buy', token: 'BCC', amount: 100, inrValue: 15000, date: '2024-01-14 10:15', status: 'completed' },
+    { id: '1', type: 'received', token: 'Aeris', amount: 50, inrValue: 7500, date: '2024-01-15 14:32', fromAddress: '0x1234...5678', status: 'completed' },
+    { id: '2', type: 'buy', token: 'Aeris', amount: 100, inrValue: 15000, date: '2024-01-14 10:15', status: 'completed' },
     { id: '3', type: 'sent', token: 'USDC', amount: -200, inrValue: 16667, date: '2024-01-13 09:45', toAddress: '0xABCD...EFGH', status: 'completed' },
-    { id: '4', type: 'swap', token: 'ETH → BCC', amount: 25, inrValue: 3750, date: '2024-01-12 16:20', status: 'completed' },
+    { id: '4', type: 'swap', token: 'ETH → Aeris', amount: 25, inrValue: 3750, date: '2024-01-12 16:20', status: 'completed' },
   ],
   isConnected: false,
   showBalance: true,
@@ -114,7 +114,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
     setWallet(prev => ({
       ...prev,
       assets: prev.assets.map(asset => 
-        asset.symbol === 'BCC' 
+        asset.symbol === 'Aeris' 
           ? { ...asset, balance: asset.balance + purchase.credits, inrValue: asset.inrValue + purchase.inrAmount }
           : asset
       ),

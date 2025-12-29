@@ -8,7 +8,7 @@ const ConsumerScreen: React.FC = () => {
   const [creditAmount, setCreditAmount] = useState('');
   const [isPurchasing, setIsPurchasing] = useState(false);
 
-  const bccAsset = wallet.assets.find(a => a.symbol === 'BCC');
+  const AerisAsset = wallet.assets.find(a => a.symbol === 'Aeris');
   const pricePerCredit = 150;
   const priceChange = 2.5;
   const volume24h = '₹12.5L';
@@ -33,7 +33,7 @@ const ConsumerScreen: React.FC = () => {
       };
 
       addPurchase(newPurchase);
-      showToast('success', 'Carbon Credits Purchased Successfully', `${amount} BCC credits added to your wallet.`);
+      showToast('success', 'Carbon Credits Purchased Successfully', `${amount} Aeris credits added to your wallet.`);
       setCreditAmount('');
       setIsPurchasing(false);
     }, 1500);
@@ -75,10 +75,10 @@ const ConsumerScreen: React.FC = () => {
           
           <div className="text-center">
             <p className="text-3xl font-bold text-foreground">
-              {wallet.showBalance ? `${bccAsset?.balance || 0} BCC` : '••••••'}
+              {wallet.showBalance ? `${AerisAsset?.balance || 0} Aeris` : '••••••'}
             </p>
             <p className="text-muted-foreground text-sm mt-1">
-              {wallet.showBalance ? `₹${bccAsset?.inrValue?.toLocaleString('en-IN') || 0}` : '₹••••••'}
+              {wallet.showBalance ? `₹${AerisAsset?.inrValue?.toLocaleString('en-IN') || 0}` : '₹••••••'}
             </p>
           </div>
         </motion.div>
@@ -178,7 +178,7 @@ const ConsumerScreen: React.FC = () => {
                       <ArrowDownRight className="w-5 h-5 text-success" />
                     </div>
                     <div>
-                      <p className="font-medium text-foreground text-sm">+{purchase.credits} BCC</p>
+                      <p className="font-medium text-foreground text-sm">+{purchase.credits} Aeris</p>
                       <p className="text-xs text-muted-foreground">
                         ₹{purchase.pricePerCredit}/credit
                       </p>
