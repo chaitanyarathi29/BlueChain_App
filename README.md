@@ -10,7 +10,6 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/build-passing-brightgreen" />
   <img src="https://img.shields.io/badge/frontend-React-blue" />
   <img src="https://img.shields.io/badge/backend-FastAPI-green" />
   <img src="https://img.shields.io/badge/ML-PyTorch-orange" />
@@ -33,18 +32,18 @@ BlueChain combines **Machine Learning**, **Web technologies**, and **Blockchain-
 
 ---
 
-## 🧠 Core Features
+## Core Features
 
-- 🌱 **Vegetation Area Estimation** using image segmentation (ML)
-- 📊 **NDVI-based Biomass Estimation**
-- 🌡️ **Climate-aware Growth Prediction** (temperature, humidity, pH, salinity)
-- 🧮 **Scientific Carbon Credit Calculation** (tCO₂/year)
-- 🔗 **Blockchain-ready mint & retire workflow**
-- 🖥️ **Web interface** for Validators, NGOs, and Industries
+- **Vegetation Area Estimation** using image segmentation (ML)
+- **NDVI-based Biomass Estimation**
+- **Climate-aware Growth Prediction** (temperature, humidity, pH, salinity)
+- **Scientific Carbon Credit Calculation** (tCO₂/year)
+- **Blockchain-ready mint & retire workflow**
+- **Web interface** for Validators, NGOs, and Industries
 
 ---
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React.js**
@@ -70,9 +69,9 @@ BlueChain combines **Machine Learning**, **Web technologies**, and **Blockchain-
 
 ---
 
-## 🚀 Getting Started (Run Locally)
+## Getting Started (Run Locally)
 
-### 1️⃣ Prerequisites
+### Prerequisites
 
 Make sure you have the following installed:
 
@@ -83,7 +82,7 @@ Make sure you have the following installed:
 
 ---
 
-## 🖥️ Frontend Setup (React)
+## Frontend Setup (React)
 
 ```bash
 cd frontend
