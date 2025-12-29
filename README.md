@@ -14,7 +14,7 @@
 
 ---
 
-## 🌍 Overview
+## Overview
 
 **BlueChain** is a **Measurement, Reporting & Verification (MRV)** platform designed to bring **trust, transparency, and scalability** to climate restoration initiatives.
 
@@ -43,7 +43,7 @@ BlueChain combines **Machine Learning**, **Web technologies**, and **Blockchain-
 
 ### Frontend
 - **React.js**
-- HTML, CSS, JavaScript
+- HTML, CSS, TypeScript
 - REST API integration
 
 ### Backend
@@ -78,7 +78,7 @@ Make sure you have the following installed:
 
 ---
 
-## Frontend Setup (React)
+## Setup (React)
 
 ```bash
 cd frontend
@@ -86,7 +86,7 @@ npm install
 npm run dev
 ```
 
-Backend Setup (FastAPI)
+## Backend Setup (FastAPI)
 ```bash
 cd backend
 pip install -r requirements.txt
